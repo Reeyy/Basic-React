@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+
+  <script type="text/babel">
+    const root = document.querySelector("#root");
+
+    /** CONTOH 1 **/
+    // function HURUFGEDE(text) {
+    //   return text.toUpperCase();
+    // }
+    // const name = "rey";
+    // const element = (
+    //   <h1>
+    //     {" "}
+    //     hello {HURUFGEDE(name)}
+    //     {new Date().toLocaleDateString()}
+    //   </h1>
+    // );
+
+    /** Contoh 2 **/
+    // const className = "heading-1";
+
+    // const element = <h1 className={className}> Reyhan </h1>;
+
+    /** Contoh 3 **/
+    const element = (
+      <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2020/11/1/b5197988-159a-4c4f-a1ec-9beaee99c39e.jpg" />
+    );
+
+    ReactDOM.render(element, root);
+  </script>
+</html>
